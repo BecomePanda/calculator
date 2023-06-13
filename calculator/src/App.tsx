@@ -1,7 +1,7 @@
 import { Paper, Container, Grid, Button, styled } from "@mui/material";
 import { useState } from "react";
-import { GridOperationButtons } from "./assets/GridOperationButtons";
-import { GridButtons } from "./assets/GridButtons";
+import { GridOperationButtons } from "./Assets/GridOperationButtons";
+import { GridButtons } from "./Assets/GridButtons";
 
 const OutputContainer = styled("div")(({ theme }) => ({
   width: "100%",
@@ -14,7 +14,7 @@ const OutputContainer = styled("div")(({ theme }) => ({
 
 const CalculatorBase = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(2),
-  marginTop: theme.spacing(4),
+  marginTop: theme.spacing(20.5),
   borderRadius: 15,
 }));
 
