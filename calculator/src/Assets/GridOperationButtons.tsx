@@ -4,6 +4,7 @@ interface GridOperationButtonsProps {
   operation: string;
   selectOperation: (operation: string) => void;
   selectedOperation: string;
+  buttonRef?: any;
 }
 
 const StyledButton = styled(Button)<{ selected: boolean }>((props) => ({
@@ -15,10 +16,11 @@ export const GridOperationButtons: React.FC<GridOperationButtonsProps> = ({
   operation,
   selectOperation,
   selectedOperation,
+  buttonRef,
 }) => {
   return (
     <Grid item xs={3}>
-      <StyledButton
+      <StyledButton ref = {buttonRef}
         fullWidth
         variant="outlined"
         onClick={() => selectOperation(operation)}
